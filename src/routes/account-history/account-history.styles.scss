@@ -1,0 +1,72 @@
+@import "../../index";
+
+.account-history-page {
+  padding: 20px 80px;
+  min-height: 52vh;
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h1 {
+    color: $salon-green;
+    text-transform: capitalize;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: normal;
+    position: relative;
+    top: 11px;
+    border-bottom: 1px solid $salon-green;
+    flex-grow: 1;
+  }
+
+  // .table {
+  //   margin-top: 10px;
+  // }
+
+  .order-id {
+    font-size: 0.9rem;
+  }
+
+  .email-container {
+    display: flex;
+    justify-content: flex-end;
+    // height: 30px;
+
+    .email {
+      // float: right;
+      position: relative;
+      bottom: 10px;
+    }
+  }
+
+  .empty-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+
+    h2 {
+      color: black;
+    }
+  }
+
+  .table {
+    .thead,
+    .tbody {
+      display: grid;
+      grid-template-columns: 22% 17% 22% 16% 15% !important;
+      gap: 2%;
+      padding: 10px;
+
+      .link {
+        color: blue;
+        cursor: pointer;
+
+        &:hover {
+          opacity: 80%;
+        }
+      }
+    }
+  }
+}

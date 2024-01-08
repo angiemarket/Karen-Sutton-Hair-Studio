@@ -1,0 +1,100 @@
+@import "../../index";
+
+.manage-store-page {
+  margin: 30px 40px 100px;
+
+  h1 {
+    color: $salon-green;
+    text-transform: capitalize;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: normal;
+    position: relative;
+    top: 11px;
+    border-bottom: 1px solid $salon-green;
+    flex-grow: 1
+  }
+
+  .manage-store-container {
+    margin: 30px 30px 20px;
+
+    // .table {
+    //   border: 1px solid $salon-green;
+    // }
+
+    // .thead {
+    //   text-transform: capitalize;
+    //   padding: 10px;
+    //   font-weight: bold;
+    // }
+
+    .thead,
+    .tbody {
+      grid-template-columns: 25% 10% 30% 10% 10% 2.5% 2.5%;
+      gap: 1.5%;
+    }
+
+    // .thead,
+    // .tbody {
+    //   border-bottom: 1px solid $salon-grey;
+    //   display: grid;
+    //   grid-template-columns: 25% 10% 30% 10% 10% 2.5% 2.5%;
+    //   gap: 1.5%;
+    //   justify-content: center;
+    //   align-items: center;
+    // }
+
+    // .tbody {
+    //   word-wrap: break-word;
+    //   padding: 5px;
+    // }
+
+    .name {
+      display: flex;
+      gap: 1.5%;
+      align-items: center;
+    }
+
+    .product-image {
+      width: 60px;
+    }
+  }
+
+  .flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .edit-icon {
+    width: 25px;
+    height: 25px;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+}
+
+// TABLE
+
+.table {
+  border: 1px solid $salon-green;
+}
+
+.thead {
+  text-transform: capitalize;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.thead,
+.tbody {
+  border-bottom: 1px solid $salon-grey;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.tbody {
+  word-wrap: break-word;
+  padding: 5px;
+}

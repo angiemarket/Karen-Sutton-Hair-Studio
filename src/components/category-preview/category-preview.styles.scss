@@ -1,0 +1,18 @@
+.category-preview-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+
+  .title {
+    font-size: 32px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    color: #c4ad8d;
+  }
+
+  .preview {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+  }
+}

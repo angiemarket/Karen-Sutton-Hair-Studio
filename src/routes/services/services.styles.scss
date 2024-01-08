@@ -1,0 +1,223 @@
+@import "../../index";
+
+.services-page {
+  justify-content: center;
+
+  .covid-regulations-container {
+    background-color: $salon-tan;
+    text-decoration: underline;
+    padding: 18px 0;
+    vertical-align: middle;
+    text-align: center;
+    h5 {
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: 500;
+      text-decoration: underline;
+      margin: 0;
+      cursor: pointer;
+    }
+  }
+
+  .banner-section {
+    background-image: url("../../assets/brushes-banner.jpg");
+    min-height: 350px;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h5 {
+      color: #000;
+      display: inline;
+      font-weight: 500;
+      letter-spacing: 2px;
+      font-size: 1.3rem;
+    }
+
+    p {
+      font-family: "Montserrat";
+      font-weight: 500;
+      margin: auto;
+      letter-spacing: 0.5px;
+      margin: 15px auto 10px;
+    }
+
+    .flex {
+      flex: 0 0;
+      min-width: 50%;
+      padding: 10px auto;
+      margin-bottom: 10px;
+    }
+
+    .styled-word-img {
+      color: $salon-tan;
+      width: 5rem;
+      height: 50px;
+      position: relative;
+      top: 20px;
+      margin: auto 10px;
+    }
+  }
+
+  .edit-icon {
+    width: 30px;
+    position: absolute;
+    right: 25px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+
+  .edit-services {
+    float: right;
+    margin-right: 30px;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .prices-container {
+    margin: 3% 20% 8%;
+
+    h1 {
+      color: black;
+      font-weight: normal;
+    }
+
+    .services-sections {
+      text-transform: uppercase;
+
+      h2 {
+        font-weight: normal;
+        margin: 25px 0 10px;
+      }
+    }
+
+    .services-header,
+    .services-table {
+      display: grid;
+      grid-template-columns: 80% 20%;
+      .service-name,
+      .service-price {
+        font-size: 18px;
+        line-height: 2;
+      }
+    }
+  }
+}
+
+.services-modal {
+  .modal-heading {
+    h3 {
+      font-size: 1.5rem;
+      color: #fff;
+      font-weight: bold;
+    }
+  }
+}
+
+.services-form-container {
+  margin-top: 25px;
+
+  .group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  input {
+    width: auto;
+  }
+}
+
+.services-edit-mode {
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+
+.modal-heading {
+  display: grid;
+  grid-template-columns: 95% 5%;
+  button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    &:hover {
+      color: red;
+    }
+  }
+  h3 {
+    margin: 0 0 10px;
+  }
+}
+
+.solid {
+  border-top: 2px solid $salon-green;
+}
+
+.center-services {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.services-header {
+  text-decoration: none;
+  color: #000;
+}
+
+.services-text1 {
+  padding: 4% 0% 2% 12%;
+}
+
+.services-text2 {
+  padding: 4% 0 2% 20%;
+}
+
+.not-visible {
+  color: #fff;
+  text-decoration: none;
+  padding-bottom: 0.4rem;
+}
+
+h4.services {
+  color: $salon-green;
+  text-decoration: none;
+  padding-bottom: 0.4rem;
+}
+
+.deserve-contact {
+  width: 7rem;
+  max-width: 7rem;
+  display: inline;
+  padding-bottom: 2rem;
+  position: relative;
+  right: 1rem;
+  top: 0.5rem;
+}
+
+.border {
+  margin: 2rem;
+  padding: 2.5rem;
+  text-align: center;
+  outline-style: solid;
+  outline-width: thick;
+  outline-color: #fff;
+  text-align: center;
+}
+
+.contact-haircare {
+  text-align: center;
+  padding-bottom: 5rem;
+
+  .submit-button {
+    padding: auto 6rem;
+    width: 15rem;
+  }
+}

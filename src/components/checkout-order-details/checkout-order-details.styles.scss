@@ -1,0 +1,57 @@
+@import "../../index";
+
+.checkout-container {
+  width: 95%;
+  display: flex;
+  justify-content: right;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-end;
+
+  .items-title {
+    color: $salon-green;
+    margin-bottom: 10px;
+  }
+
+  .checkout-header {
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid darkgrey;
+
+    .header-block {
+      text-transform: capitalize;
+      width: 23%;
+
+      &:last-child {
+        width: 8%;
+      }
+    }
+  }
+
+  .order-summary-container {
+    margin-top: 10px;
+
+    h3 {
+      font-size: 22px;
+    }
+    .order-summary-columns {
+      display: grid;
+      grid-template-columns: 58% 38%;
+      gap: 2%;
+      justify-content: end;
+      margin-bottom: 5px;
+
+      .subtotal {
+        font-weight: bold;
+      }
+
+      .total {
+        margin-top: 18px;
+        font-size: 35px;
+        color: $salon-green !important;
+      }
+    }
+  }
+}

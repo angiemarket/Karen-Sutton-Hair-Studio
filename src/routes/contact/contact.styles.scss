@@ -1,0 +1,102 @@
+@import "../../index";
+
+.contact-page-header {
+  margin: 0 0 1.5rem 0;
+  padding: 0;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../assets/salon-05.jpg");
+  min-height: 450px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  opacity: 110%;
+  display: table;
+  vertical-align: middle;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 0 10px rgba(0, 0, 0, 0.1), 0 0 0 rgba(0, 0, 0, 0.1);
+
+  .center-header-contact {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 10%;
+    height: 100%;
+    width: 100%;
+  }
+
+  .styled-text {
+    color: $salon-green;
+    display: inline;
+    background-color: none;
+    width: 13rem;
+    position: relative;
+    top: 1.5rem;
+    left: 7px;
+  }
+
+  h3 {
+    color: #fff;
+    font-weight: 600;
+    display: inline-block;
+    letter-spacing: 6px;
+    opacity: 100%;
+    font-size: 2.8rem;
+  }
+}
+
+//   PAGE CONTENT
+
+.contact-page-content {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  margin: 10px 8% 100px;
+  padding: auto 20px;
+
+  h3 {
+    text-decoration: none;
+    color: $salon-green;
+    font-size: 25px;
+    margin: 0;
+  }
+
+  .covid-modal-button {
+    letter-spacing: 0;
+    font-weight: bold;
+    color: $salon-green;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+}
+
+// CONTACT FORM SECTION
+
+.custom-input-field,
+.custom-select,
+.custom-textarea {
+  background-color: #ede8e8;
+}
+
+.form-container {
+  .form-container-h3 {
+    margin-bottom: 20px;
+  }
+  h4 {
+    text-decoration: none;
+    padding-bottom: 0.7rem;
+    font-size: 1.5rem;
+    margin: 0;
+  }
+
+  h5 {
+    text-decoration: none;
+    color: black;
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  .contact-details-container {
+    margin-top: 40px;
+  }
+}

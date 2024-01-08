@@ -1,0 +1,70 @@
+$salon-grey: #ede8e8;
+$rose-gold: #c4ad8d;
+$golden: #c0c48d;
+
+.checkout-item-container {
+  width: 80%;
+  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: 20% 72% 5%;
+  gap: 1%;
+  min-height: 100px;
+  border-bottom: 1px solid darkgrey;
+  padding: 15px 0;
+  font-size: 15px;
+  align-items: start;
+
+  .image-container {
+    width: 90%;
+    padding-right: 15px;
+
+    img {
+      max-width: 100%;
+      height: 100%;
+      border: 1px solid $golden;
+      background-color: white;
+    }
+  }
+
+  .product-info-container {
+    max-width: 80%;
+    .price-container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+      .price {
+        font-weight: bold;
+      }
+    }
+
+    .name {
+      font-weight: bold;
+    }
+  }
+
+  .quantity {
+    border: 1px solid $rose-gold;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    span {
+      margin: auto 4px;
+      cursor: pointer;
+      font-weight: bold;
+      &:hover {
+        opacity: 80%;
+      }
+    }
+  }
+
+  .remove-button {
+    padding-left: 12px;
+    cursor: pointer;
+
+    &:hover {
+      color: red;
+    }
+  }
+}

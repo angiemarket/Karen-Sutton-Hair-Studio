@@ -1,0 +1,52 @@
+@import "../../index";
+
+.category-page-container {
+  padding: 0px 90px 80px;
+  margin-bottom: 20px;
+
+  .back-button {
+    position: absolute;
+    top: 175px;
+    left: 10px;
+    width: 60px;
+    height: 98px;
+    cursor: pointer;
+  }
+
+  .category-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+
+  .category-title {
+    font-size: 38px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  .filters-container {
+    display: flex;
+    flex: 1 1;
+    height: 30px;
+    margin-bottom: 20px;
+    align-items: center;
+    gap: 20px;
+
+    .column {
+      display: flex;
+      width: 100%;
+    }
+
+    .filter {
+      padding: 2px 10px;
+      background-color: lavenderblush;
+      border: 1px solid white;
+      cursor: pointer;
+      &:hover {
+        border: 1px solid $salon-green;
+      }
+    }
+  }
+}

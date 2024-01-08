@@ -1,0 +1,110 @@
+@import "../../index";
+
+.payment-form {
+  margin: 15px auto 60px;
+  box-shadow: 0 0 2px #868686;
+  padding: 30px 30px 40px;
+  border-radius: 5px;
+  height: 615px;
+  width: 70%;
+
+  main {
+    padding-top: 10px;
+
+    .span {
+      color: red;
+      width: 300px;
+      height: 30px;
+      padding: 5px 10px;
+    }
+
+    .payment-form-columns {
+      // display: flex;
+      display: grid;
+      grid-template-columns: 32% 32% 32%;
+      gap: 2%;
+    }
+
+    .input-group {
+      display: flex;
+
+      input {
+        // min-width: 400px;
+      }
+    }
+
+    .terms {
+      display: flex;
+      margin: 10px 0 -8px 0;
+      align-items: center;
+      align-content: center;
+      align-self: center;
+      font-weight: bold;
+
+      p {
+        margin-top: 12px;
+        margin-left: 10px;
+        font-size: 12px;
+      }
+    }
+
+    .payment-button-container {
+      margin: 5px auto 8px;
+    }
+  }
+}
+
+.disabled {
+  opacity: 60%;
+  cursor: default;
+}
+
+.shipping-info-container {
+  border-bottom: 1px solid #b7b7b7;
+  margin-bottom: 12px;
+
+  label {
+    color: #b7b7b7;
+  }
+
+  input {
+    border: none;
+    outline: none;
+    background: none;
+    font-family: "Montserrat";
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+    width: 100%;
+    font-size: 16px;
+
+    &::placeholder {
+      color: black;
+    }
+  }
+}
+
+.InputContainer .InputElement {
+  display: flex;
+  color: #000;
+  background-color: white;
+  border-radius: 0;
+  padding: 0.375rem 0.75rem;
+  height: 2.5rem;
+  border: 1px solid $salon-green;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  width: 100%;
+  margin: 0 0 1rem;
+  font-family: "Montserrat";
+
+  &::-webkit-input-placeholder {
+    color: black;
+  }
+}

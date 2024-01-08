@@ -1,0 +1,52 @@
+$rose-gold: #c4ad8d;
+$golden: #c0c48d;
+$salon-grey: #ede8e8;
+
+.pagination-container {
+  justify-content: center;
+  margin-bottom: 40px;
+  padding-left: 0;
+  padding-right: 0;
+
+  .page-navigation-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+
+    .pagination-list {
+      display: flex;
+      list-style: none;
+      padding-left: 0;
+
+      .page-button {
+        display: block;
+        padding: 10px 20px;
+        border: 0;
+        background: none;
+        outline: none;
+        cursor: pointer;
+        background-color: #ede8e8;
+        font-family: "Montserrat";
+        font-size: 19px;
+        margin: 5px 10px;
+        color: black;
+        &:hover {
+          opacity: 80%;
+        }
+      }
+
+      .active {
+        font-weight: bold;
+        border: 1px solid #c0c48d;
+      }
+    }
+  }
+
+  .results-container {
+    display: flex;
+    justify-content: center;
+    padding: 5px 15px;
+    color: #c0c48d;
+  }
+}

@@ -1,0 +1,55 @@
+$salon-grey: #ede8e8;
+$rose-gold: #c4ad8d;
+$golden: #c0c48d;
+
+.cart-dropdown-container {
+  position: absolute;
+  width: 280px;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid black;
+  background-color: white;
+  top: 70px;
+  right: 30px;
+  z-index: 5;
+
+  .button-container {
+    height: 70px;
+  }
+
+  .empty-message {
+    font-size: 18px;
+    margin: 50px auto;
+  }
+
+  .cart-items {
+    height: 255px;
+    flex-direction: column;
+    overflow-y: auto;
+    border: 1px solid $golden;
+    border-radius: 10px;
+  }
+
+  button {
+    margin-top: auto;
+  }
+
+  .no-items {
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    margin: 0;
+    height: 100%;
+    display: flex;
+  }
+
+  .subtotal-container {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: "Montserrat";
+    margin-top: 5px;
+  }
+}

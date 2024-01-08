@@ -1,0 +1,97 @@
+// _index.scss
+
+$salon-green: #c0c48d !default; //Misty Valley
+$salon-tan: #c4ad8d !default; //Townhall Tan
+$salon-grey: #ede8e8 !default; //Melodic White
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Montserrat", "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 1.5px;
+  line-height: 1.5;
+  width: 100%;
+  overflow-x: hidden !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h1 {
+  color: $salon-tan;
+  font-size: 1.75rem;
+  margin: 0 0 0.75rem 0;
+}
+
+h2 {
+  color: $salon-green;
+}
+
+h3 {
+  color: $salon-green;
+  font-weight: normal;
+}
+
+h4 {
+  text-decoration: underline;
+  text-underline-position: under;
+  font-weight: normal;
+}
+
+h5 {
+  color: $salon-green;
+  font-family: "Montserrat";
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+:hover a {
+  text-decoration: none;
+}
+
+// SCROLL BAR
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 3px grey;
+  border-radius: 5px;
+  background-color: $salon-grey;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $salon-green;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  opacity: 80%;
+  // background-color: white;
+}
+
+/*       Scroll to Top Arrow       */
+.scroll-up-arrow-image {
+  width: 60px;
+  height: 50px;
+  float: right;
+  position: relative;
+  bottom: 50px;
+  cursor: pointer;
+  &:hover {
+    opacity: 80%;
+  }
+}

@@ -1,0 +1,28 @@
+.covid-modal {
+  .modal-heading {
+    background-color: transparent;
+    color: #fff;
+
+    button {
+      background-color: #c0c48d;
+      color: #fff;
+    }
+    h3 {
+      font-size: 27px;
+      font-weight: 500;
+      color: #fff;
+    }
+  }
+
+  .modal-content {
+    .ks-brand-container {
+      margin-top: 40px;
+    }
+    .karen-sutton-signature-img {
+      width: 400px;
+    }
+    p {
+      padding: 14px auto;
+    }
+  }
+}

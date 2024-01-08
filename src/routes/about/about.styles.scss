@@ -1,0 +1,108 @@
+@import "../../index";
+
+.about-page {
+  h1 {
+    color: black;
+    font-weight: normal;
+  }
+
+  .header {
+    padding: 5% 30%;
+    background-color: $salon-tan;
+    text-align: center;
+    color: white;
+    font-family: "Montserrat";
+    font-size: 2rem;
+    font-weight: lighter;
+    margin: 0;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+      0 0 10px rgba(0, 0, 0, 0.1), 0 0 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .about-page-body-container {
+    margin: auto 0.5%;
+
+    .row-container {
+      display: grid;
+      grid-template-columns: 50% 40%;
+      gap: 10%;
+      padding: 5% 8%;
+
+      .flex {
+        display: flex;
+      }
+
+      .about-content {
+        margin-top: 22px;
+      }
+    }
+  }
+
+  .about-button-container {
+    margin-top: 3rem;
+    text-align: right;
+  }
+
+  .about-section-ks {
+    width: 50%;
+  }
+
+  .about-page-img {
+    width: 100%;
+    border-style: solid;
+    border-width: 3px;
+    padding: 0.8rem;
+    border-color: $salon-green;
+  }
+
+  .p-inline {
+    display: inline;
+    line-height: 1.6;
+  }
+
+  .period {
+    display: inline;
+    position: relative;
+    left: 88px;
+  }
+
+  .styled-the-text {
+    width: 3.5rem;
+    height: 3rem;
+    display: inline;
+    margin: auto 0.5rem 1.5rem;
+    position: relative;
+    bottom: 9px;
+  }
+
+  .styled-deserve-text {
+    width: 5rem;
+    height: 1.8rem;
+    display: inline;
+    margin: 0 7px;
+    position: absolute;
+  }
+
+  .quotation-about {
+    width: 18%;
+    position: relative;
+    bottom: 2.1rem;
+    background-color: transparent;
+  }
+
+  p.quote {
+    margin: 0;
+    position: absolute;
+    font-weight: normal;
+  }
+
+  .quote-container {
+    margin-top: 0;
+    padding: 0% 7% 0% 2%;
+    text-align: left;
+  }
+
+  .custom-select {
+    width: 105%;
+  }
+}

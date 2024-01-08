@@ -1,0 +1,322 @@
+@import "../../index";
+
+.home-page {
+  /* Page Header/Hero Section */
+  .salon-banner-image {
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+    min-height: 600px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: table;
+    .center-header {
+      display: table-cell;
+      vertical-align: middle;
+      padding: 0 25%;
+      height: 100%;
+      width: 100%;
+      box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+        0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
+        0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
+    }
+
+    .salon-image-text {
+      color: #fff;
+      font-size: 40px;
+      height: 100%;
+      line-height: 100%;
+      font-weight: normal;
+      animation: shine 3s infinite linear;
+      background: linear-gradient(
+        to right,
+        hsl(0, 0%, 90%) 0,
+        #fff,
+        hsl(0, 0%, 100%) 20%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      b {
+        font-weight: 700;
+        font-family: "Montserrat";
+      }
+    }
+
+    @keyframes shine {
+      0% {
+        background-position: 0;
+      }
+      60% {
+        background-position: 300px;
+      }
+      100% {
+        background-position: 600px;
+      }
+    }
+  }
+
+  .button-container {
+    min-width: 25rem;
+  }
+
+  /* Mission and Testimonial/Covid Section */
+
+  .about-section-container {
+    .indent-testimonial {
+      padding-left: 2rem;
+      padding-top: 1rem;
+    }
+    .mission-statement-row {
+      display: flex;
+      padding: 3px 7px 7px 0px;
+
+      .mission-statement-col {
+        .ks-brand-img {
+          width: 50%;
+          margin-bottom: 7px;
+        }
+      }
+
+      .col-1 {
+        background-color: $salon-grey;
+        padding: 2% 8%;
+        margin-top: 14px;
+        margin-right: 15px;
+        box-shadow: 1px 2px 4px hsl(0deg 0% 0% / 0.075);
+      }
+
+      .col-2 {
+        padding-right: 12px;
+        display: flex;
+      }
+    }
+
+    .testimonial-container {
+      padding: 2% 8%;
+      text-align: left;
+      display: flex;
+      width: 60%;
+      background-color: white;
+
+      h4 {
+        text-align: left;
+        text-decoration: none;
+        display: inline;
+        font-size: 1.5rem;
+      }
+
+      .word-together-img {
+        width: 14%;
+        position: relative;
+        top: 35px;
+        left: 10px;
+      }
+
+      .testimonial-btn-container {
+        text-align: right;
+        margin-top: 7px;
+        margin-right: 14px;
+      }
+    }
+
+    .salon-chair-img {
+      width: 25%;
+      position: absolute;
+      right: 3%; /* 1000px */
+      top: 54.5rem; /* 710px */
+      border-style: solid;
+      border-width: 5px;
+      border-color: $salon-tan;
+      padding: 0.5rem;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1), 0 0 40px rgba(0, 0, 0, 0.1),
+        0 0 60px rgba(0, 0, 0, 0.1), 0 0 80px rgba(0, 0, 0, 0.1);
+    }
+
+    .signature-link {
+      color: $salon-green;
+      font-weight: normal;
+      font-size: 1.5rem;
+      display: inline-block;
+      margin: right;
+      text-align: right;
+      width: 100%;
+      letter-spacing: 2px;
+    }
+
+    :hover.signature-link {
+      color: #cccfa3;
+      font-weight: 500;
+      text-align: right;
+      text-decoration: none;
+    }
+  }
+
+  .signature {
+    color: $salon-green;
+    text-align: right;
+  }
+
+  .mobile-covid {
+    display: none;
+  }
+
+  .covid-btn-link {
+    background-color: #fff;
+    color: $salon-green;
+    border-radius: 0;
+    letter-spacing: 3px;
+    border-style: none;
+    border-color: #fff;
+    cursor: help;
+  }
+
+  :hover.covid-btn-link {
+    background-color: #fff;
+    color: #c6c998;
+  }
+
+  // Services and  Products Marketing
+
+  .services-and-products-container {
+    margin: 160px auto 40px;
+    padding: 40px 5% 60px;
+    background-color: #ede6dc;
+    box-shadow: 1px 2px 4px hsl(0deg 0% 0% / 0.075);
+
+    .header {
+      h2 {
+        font-weight: bold;
+        margin-bottom: 30px;
+        font-size: 1.7rem;
+        color: $salon-green;
+      }
+    }
+    .content {
+      display: flex;
+      gap: 50px;
+      justify-content: center;
+      overflow: hidden;
+      .image-container {
+        overflow: hidden;
+        padding: 7px;
+        display: flex;
+        text-align: center;
+        vertical-align: middle;
+        justify-content: center;
+        margin: auto;
+        border: 1px solid $salon-green;
+        background-color: #f4f1f1;
+
+        h3 {
+          font-weight: bolder;
+        }
+
+        .image-1 {
+          background-image: url("../../assets/salon-04.jpg");
+          min-height: 700px;
+          background-position: center center;
+          background-size: cover;
+          margin: auto;
+          width: 700px;
+          display: flex;
+
+          &:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+            transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+          }
+        }
+
+        .image-2 {
+          background-image: url("../../assets/salon-03.jpg");
+          min-height: 700px;
+          background-position: center center;
+          background-size: cover;
+          margin: auto;
+          width: 700px;
+          display: flex;
+
+          &:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+            transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+          }
+        }
+
+        .image-content {
+          background-color: white;
+          padding: 15px;
+          width: 150px;
+          margin: auto;
+          border: 1px solid #c6c998;
+          opacity: 80%;
+        }
+      }
+    }
+
+    .products {
+      width: 750px;
+      cursor: pointer;
+    }
+    .services {
+      width: 580px;
+      cursor: pointer;
+    }
+  }
+
+  .hours {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: "Playfair Display";
+    letter-spacing: 1px;
+    line-height: 1;
+    h5 {
+      font-size: 25px;
+      margin-bottom: 28px;
+    }
+    .covid-link-h5 {
+      cursor: help;
+      font-weight: 500;
+      color: #c6c998;
+      font-size: 1.25rem;
+      font-family: "Montserrat";
+    }
+    i {
+      font-family: "Montserrat";
+    }
+  }
+
+  .covid-btn {
+    background-color: transparent;
+    border-style: none;
+    border: none;
+  }
+
+  .covid-mobile {
+    display: none;
+  }
+
+  .mobile-covid-services {
+    display: none;
+  }
+
+  /*       Social Media Section       */
+
+  .social-media-section {
+    text-align: center;
+    width: 90.9vw;
+    margin-bottom: 40px;
+    img {
+      padding-left: 5%;
+      width: 90vw;
+      &:hover {
+        opacity: 90%;
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+@import "../../index";
+
+.button-container {
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  background-color: $salon-green;
+  font-size: 1.2rem;
+  font-family: "Montserrat";
+  outline-color: $salon-green;
+  border-radius: 0;
+  margin-top: 1rem;
+  height: 3rem;
+  letter-spacing: 1.5px;
+  text-transform: capitalize;
+  padding-left: 45px;
+  padding-right: 45px;
+  align-items: center;
+  text-align: center;
+
+  &:hover {
+    opacity: 90%;
+  }
+
+  &.google-sign-in {
+    background-color: #4285f4;
+    color: white;
+    &:hover {
+      background-color: #357ae8;
+      border: none;
+    }
+  }
+
+  &.header {
+    background-color: $salon-green;
+    width: 30rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding-left: 0;
+    padding-right: 0;
+    height: 3.5rem;
+    margin-top: 0;
+    &:hover {
+      opacity: 80%;
+    }
+  }
+
+  &.salon-tan {
+    background-color: $salon-tan;
+    &:hover {
+      opacity: 80%;
+    }
+  }
+
+  &.salon-grey {
+    // background-color: $salon-grey;
+    background-color: #d5d0d0;
+    &:hover {
+      opacity: 80%;
+    }
+  }
+}

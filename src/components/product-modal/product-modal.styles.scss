@@ -1,0 +1,42 @@
+@import "../../index";
+
+.product-modal {
+  .modal-heading {
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    button {
+      color: darkgray;
+      &:hover {
+        color: red;
+      }
+    }
+
+    h3 {
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+  }
+
+  .product-form {
+    padding: 20px 30px;
+
+    .custom-file-upload {
+      margin: 10px;
+      padding: 7px;
+    }
+
+    .buttons-container {
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 15px;
+
+      button {
+        width: 155px;
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+}

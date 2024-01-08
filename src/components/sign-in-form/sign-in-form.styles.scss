@@ -1,0 +1,37 @@
+@import "../../index";
+
+.sign-up-container {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  background-color: $salon-grey;
+  border: 1px solid $salon-green;
+  padding: 4% 6%;
+  margin: 90px auto;
+  opacity: 95%;
+
+  h2 {
+    margin: 10px 0;
+  }
+
+  .link {
+    color: rgb(75, 2, 153);
+    cursor: pointer;
+    &:hover {
+      opacity: 80%;
+    }
+  }
+
+  .buttons-container {
+    width: 100%;
+
+    button {
+      width: 255px;
+      align-items: center;
+    }
+  }
+
+  span {
+    margin-bottom: 20px;
+  }
+}

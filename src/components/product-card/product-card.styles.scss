@@ -1,0 +1,126 @@
+@import "../../index";
+
+.product-card-container {
+  align-items: center;
+  position: relative;
+  padding: 7%;
+  background-color: $salon-grey;
+  text-align: center;
+
+  .product-card-container-rows {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+
+    img {
+      width: 95%;
+      height: 350px;
+      object-fit: scale-down;
+      margin: auto 2.5% 5px;
+      cursor: pointer;
+      border: 1px solid $salon-green;
+      background-color: white;
+    }
+
+    button {
+      width: 80%;
+      opacity: 0.7;
+      right: 9.8%;
+      position: absolute;
+      top: 255px;
+      display: none;
+      font-size: 1rem;
+    }
+
+    .added-to-cart-confirmation {
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      right: auto;
+      bottom: auto;
+      margin-right: 50%;
+      transform: translate(-50%, -50%);
+      height: 150px;
+      width: 250px;
+      background-color: #ede8e8;
+      text-align: center;
+      vertical-align: middle;
+      box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+        0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
+        0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
+
+      p {
+        flex: 0 0;
+      }
+      img {
+        width: 50px;
+        height: 50px;
+        background: none;
+        border: none;
+        margin: 15px 0 0;
+      }
+    }
+
+    &:hover {
+      img {
+        opacity: 0.8;
+      }
+
+      button {
+        opacity: 0.85;
+        display: block;
+      }
+    }
+
+    .footer {
+      font-size: 18px;
+      text-align: center;
+
+      .name {
+        font-weight: bold;
+        letter-spacing: 0;
+        margin-bottom: 5px;
+      }
+
+      .description {
+        letter-spacing: 0;
+        font-size: 14px;
+        margin-bottom: 5px;
+      }
+
+      .price {
+        font-size: 16px;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: black;
+        font-family: "Montserrat";
+      }
+    }
+
+    .in-cart-indicator {
+      font-size: 12px;
+      color: $salon-green;
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+
+      .shopping-icon {
+        height: 20px;
+        // cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (max-width: 1060px) {
+  .product-card-container {
+    .product-card-container-rows {
+      button {
+        font-size: 0.8rem !important;
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+}

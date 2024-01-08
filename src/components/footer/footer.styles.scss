@@ -1,0 +1,34 @@
+.footer-container {
+  background-color: #ede8e8;
+  text-align: center;
+  padding: 2% 10px;
+  letter-spacing: 3px;
+  font-family: "Montserrat";
+  line-height: 1.5;
+  // width: 100%;
+  .copyright {
+    color: #c0c48d;
+  }
+
+  .facebook-icon {
+    margin: 5px 6px;
+    width: 35px;
+    color: #000;
+    &:hover {
+      opacity: 70%;
+    }
+  }
+
+  .instagram-icon {
+    margin: 5px 6px;
+    width: 60px;
+    color: #000;
+    &:hover {
+      opacity: 70%;
+    }
+  }
+
+  :hover.footer-icon {
+    color: #605052;
+  }
+}
